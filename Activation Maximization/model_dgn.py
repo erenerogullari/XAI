@@ -99,7 +99,7 @@ def train_model(
 def load_data():
     # Load MNIST dataset
     train_dataset = torchvision.datasets.MNIST(
-        root="./Activation Maximization/data",
+        root="./data",
         train=True,
         download=False,
         transform=torchvision.transforms.Compose(
@@ -111,7 +111,7 @@ def load_data():
     )
 
     test_dataset = torchvision.datasets.MNIST(
-        root="./Activation Maximization/data",
+        root="./data",
         train=False,
         download=False,
         transform=torchvision.transforms.Compose(
